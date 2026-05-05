@@ -14,7 +14,7 @@
       --accent: #c8a96a;
       --bg: #f7f7f7;
     }
- 
+
     * { box-sizing: border-box; }
 
     body {
@@ -135,6 +135,26 @@
       padding: 20px;
       border-radius: 15px;
       margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+    }
+
+    .user-profile {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 15px;
+      overflow: hidden;
+    }
+
+    .user-profile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #user2 img {
+    object-position: top; 
     }
 
     .about {
@@ -188,7 +208,7 @@
         <li>✔ Pogodno za sve pasmine</li>
       </ul>
 
-      <div class="price">150 €</div>
+      <div class="price">80 €</div>
       <button>Kupi sada</button>
     </div>
   </section>
@@ -210,9 +230,33 @@
 
   <section class="reviews">
     <h2>Recenzije kupaca</h2>
-    <div class="review">⭐️⭐️⭐️⭐️⭐️ "Odličan proizvod! Moj pas ga obožava."</div>
-    <div class="review">⭐️⭐️⭐️⭐️⭐️ "Kvaliteta je vrhunska, vrijedi svake kune."</div>
-    <div class="review">⭐️⭐️⭐️⭐️ "Vrlo praktično za duge šetnje."</div>
+    <div class="review">
+      <div class="user-profile" id="user1">
+        <!-- Ovdje postavite sliku profila Filipa Čoraka -->
+        <img src="filipcorak.jpeg" alt="Filip Čorak"> 
+      </div>
+      <div>
+        ⭐️⭐️⭐️⭐️⭐️ "Odličan proizvod! Moj pas ga obožava i voli kad sjedim na njemu i odmaram svoje nogice." - Filip Čorak
+      </div>
+    </div>
+    <div class="review">
+      <div class="user-profile" id="user2">
+        <!-- Ovdje postavite sliku profila Marka Plazanića -->
+        <img src="markoplazanic.jpeg" alt="Marko Plazanić">
+      </div>
+      <div>
+        ⭐️⭐️⭐️⭐️⭐️ "Kvaliteta je vrhunska, vrijedi svakog eura. Jako volim jahati svog psa!" - Marko Plazanić
+      </div>
+    </div>
+    <div class="review">
+      <div class="user-profile" id="user3">
+        <!-- Ovdje postavite sliku profila Frana Paja -->
+        <img src="franpaj.jpeg" alt="Fran Paj">
+      </div>
+      <div>
+        ⭐️⭐️⭐️⭐️⭐️ "Vrlo praktično za duge šetnje. Definitivno ću ga nastaviti jahati!" - Fran Paj
+      </div>
+    </div>
   </section>
 
   <section id="about" class="about">
